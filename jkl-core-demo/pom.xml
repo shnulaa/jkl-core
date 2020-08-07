@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <groupId>com.jkinvest.jkl.core</groupId>
+        <artifactId>jkl-core</artifactId>
+        <version>c.2.4-SNAPSHOT</version>
+        <relativePath>../</relativePath>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>jkl-core-demo</artifactId>
+    <name>${project.artifactId}</name>
+    <description>演示服务</description>
+
+    <packaging>pom</packaging>
+    <modules>
+        <module>jkl-core-demo-entity</module>
+        <module>jkl-core-demo-biz</module>
+        <module>jkl-core-demo-controller</module>
+        <module>jkl-core-demo-server</module>
+    </modules>
+
+</project>

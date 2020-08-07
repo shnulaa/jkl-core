@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>jkl-core-oauth</artifactId>
+        <groupId>com.jkinvest.jkl.core</groupId>
+        <version>c.2.4-SNAPSHOT</version>
+        <relativePath>../</relativePath>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>jkl-core-oauth-controller</artifactId>
+    <name>${project.artifactId}</name>
+    <description>权限服务接口模块</description>
+    <dependencies>
+        <dependency>
+            <groupId>com.jkinvest.jkl.core</groupId>
+            <artifactId>jkl-core-oauth-biz</artifactId>
+            <version>${zuihou-project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.jkinvest.jkl.core</groupId>
+            <artifactId>jkl-core-authority-biz</artifactId>
+            <version>${zuihou-project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.jkinvest.jkl.core</groupId>
+            <artifactId>jkl-core-tenant-biz</artifactId>
+            <version>${zuihou-project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.jkinvest.jkl.core</groupId>
+            <artifactId>jkl-core-msgs-api</artifactId>
+            <version>${zuihou-project.version}</version>
+        </dependency>
+        <!-- jwt 只有Oauth服务需要使用 -->
+        <dependency>
+            <groupId>com.jkinvest.jkl.base</groupId>
+            <artifactId>jkl-base-jwt-starter</artifactId>
+        </dependency>
+    </dependencies>
+
+</project>

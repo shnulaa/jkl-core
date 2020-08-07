@@ -1,0 +1,15 @@
+zuihou:
+  redis:
+      ip: 192.168.210.171
+      port: 6379
+      password: 
+  mysql:
+    database: zuihou_defaults           # 默认库
+    ip: ${MYSQL_IP:192.168.210.171}               # 修改为  数据库IP
+    username: jft_admin      
+    password: jft_20!$20
+    port: 3306
+    driverClassName: com.mysql.cj.jdbc.Driver
+database:
+  multiTenantType: SCHEMA     # 模式
+  tenantDatabasePrefix: zuihou_base
