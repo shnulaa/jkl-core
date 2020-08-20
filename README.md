@@ -42,24 +42,6 @@ RabbitMQ、FastDFS等主要框架和中间件。
 - k8s部署
 - jenkins自动化部署
 
-## 如果觉得对您有任何一点帮助，请点右上角 "Star" 支持一下吧，谢谢！
-
-## 详细文档: https://www.kancloud.cn/zuihou/zuihou-admin-cloud
-
-    ps: gitee捐献 或者 二维码打赏（本页最下方）： 45元及以上 并 备注邮箱，可得开发文档一份（支持后续更新）
-    打赏或者捐献后直接加群：1039545140 并备注打赏时填写的邮箱，可以持续的获取最新的文档。 
-
-## 收费版
-本项目分为开源版和收费版，github和gitee上能搜索到的为开源版本，遵循Apache协议。 收费版源码在私有gitlab托管，购买后开通账号。
-
-收费版和开源版区别请看：[收费版](收费版.md)
-
-
-## 交流群： 63202894（主群）、 1011148503（2号群）
-![qq群.png](docs/image/qq群.png) <a target="_blank" href="//shang.qq.com/wpa/qunwpa?idkey=958f380cb111bcea0cfe35cc5996c47b72ae17a3757807599d1f5ad4fa3c4f6b"><img border="0" src="//pub.idqqimg.com/wpa/images/group.png" alt="zuihou-admin-cloud 交流" title="zuihou-admin-cloud 交流"></a>
-
-    加群前请先将下方项目点star，支持下群主，谢谢😘
-
 ## 项目代码地址防走丢
 
 | 项目 | gitee | github | 备注 |
