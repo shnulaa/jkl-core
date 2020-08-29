@@ -20,7 +20,7 @@ import java.net.UnknownHostException;
 @EnableDiscoveryClient
 @EnableFeignClients({"com.jkinvest.jkl"})
 @EnableZuulProxy
-@Slf4j
+@Slf4j 
 public class ZuulServerApplication {
     public static void main(String[] args) throws UnknownHostException {
         ConfigurableApplicationContext application = SpringApplication.run(ZuulServerApplication.class, args);
