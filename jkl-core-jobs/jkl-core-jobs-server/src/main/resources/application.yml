@@ -1,13 +1,13 @@
 zuihou:
   redis:
-      ip: 192.168.210.171
+      ip: 192.168.50.53
       port: 6379
-      password: SbtyMveYNfLzTks7H0apCmyStPzWJqjy
+      password: ''
   mysql:
     database: zuihou_defaults           # 默认库
-    ip: ${MYSQL_IP:192.168.210.171}               # 修改为  数据库IP
-    username: jft_admin      
-    password: jft_20!$20
+    ip: ${MYSQL_IP:192.168.50.53}               # 修改为  数据库IP
+    username: root      
+    password: lyq522095
     port: 3306
     driverClassName: com.mysql.cj.jdbc.Driver
 database:
