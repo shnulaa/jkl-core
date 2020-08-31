@@ -145,6 +145,9 @@
                 <artifactId>docker-maven-plugin</artifactId>
                 <version>1.0.0</version>
                 <configuration>
+                    <buildArgs>
+                        <JAR_FILE>target/${project.build.finalName}.jar</JAR_FILE>
+                    </buildArgs>
                     <!--镜像名称-->                    
                     <imageName>${docker.repostory}/${docker.registry.name}/${project.artifactId}:${project.version}</imageName>
                     <!-- 指定Dockerfile所在的路径 >-->
