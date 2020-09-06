@@ -13,6 +13,17 @@
     <artifactId>jkl-core-msgs-server</artifactId>
     <name>${project.artifactId}</name>
     <description>消息服务启动模块</description>
+    
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <java.version>1.8</java.version>
+        <!-- 监听端口 -->
+        <server.port>7000</server.port>
+        <!-- 镜像名称-->
+        <docker.repostory>registry.cn-shanghai.aliyuncs.com</docker.repostory>
+        <docker.registry.name>liuyq</docker.registry.name>
+    </properties>
 
     <dependencies>
 
@@ -126,7 +137,41 @@
                     </buildArgs>
                 </configuration>
             </plugin>
+            
+            <plugin>
+                <groupId>com.spotify</groupId>
+                <artifactId>docker-maven-plugin</artifactId>
+                <version>1.0.0</version>
+                <configuration>
+                    <buildArgs>
+                        <JAR_FILE>target/${project.build.finalName}.jar</JAR_FILE>
+                    </buildArgs>
+                    <!--镜像名称-->                    
+                    <imageName>${docker.repostory}/${docker.registry.name}/${project.artifactId}:${project.version}</imageName>
+                    <!-- 指定Dockerfile所在的路径 >-->
+                    <dockerDirectory>./</dockerDirectory>
+                    <!--指定推送的镜像
+                    <dockerHost>tcp://192.168.123.202:2375</dockerHost>-->
+                    <resources>
+                        <resource>
+                            <targetPath>/</targetPath>
+                            <directory>${project.build.directory}</directory>
+                            <include>${project.build.finalName}.jar</include>
+                        </resource>
+                    </resources>
+
+                    <!--推送阿里云相关-->
+                    <serverId>docker-aliyun</serverId>
+                    <!--表示阿里云的docker仓库地址。阿里云的容器镜像服务地址-->
+                    <registryUrl>${docker.repostory}</registryUrl>
+                    <!--表示推送镜像到仓库。-->
+                    <pushImage>true</pushImage>
+
+                </configuration>
+            </plugin>
         </plugins>
+        
+        
 
     </build>
 </project>
