@@ -120,7 +120,7 @@
     </select>
 
 
-    <select id="findDownSizeByDate" resulttype="com.jkinvest.jkl.core.file.domain.FileStatisticsDO">
+    <select id="findDownSizeByDate" resultType="com.jkinvest.jkl.core.file.domain.FileStatisticsDO">
         select
         <if test="dateType == 'MONTH'">
             water.create_month
